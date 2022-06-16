@@ -1,0 +1,78 @@
+$font-titles: 'Lato', sans-serif;
+$font-text: 'Oswald', sans-serif;
+$color-primario: #333333;
+$background-color: #8841DA;
+$color-claro: #ffffff;
+$color-variacion: #3f579a;
+
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: $font-titles;
+}
+main{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+}
+.perfil{
+	width: 50%;
+	padding-top: 50px;
+	background-color: $background-color;
+	color: $color-claro;
+	&__avatar{
+		display: block;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+	&__nombre{
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2rem;
+	}
+	&__titulo{
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+	&__boton{
+		display: block;
+		width: 100px;
+		height: 40px;
+		margin: 15px auto;
+		padding-top: 15px;
+		text-decoration: none;
+		text-align: center;
+		border: 1px solid black;
+		text-transform: uppercase;
+	}
+}
+.estadistica--perfil{
+	display: flex;
+	background-color: $color-claro;
+	color: $color-primario;
+	width: 50%;
+	height: 90px;
+	padding-top: 15px;
+	margin: 0 auto;
+	justify-content: space-around;
+	border-radius: 20px;
+	h3{
+		font-weight: 600;
+		font-size: 2rem;
+		text-align: center;
+		text-transform: uppercase;	
+	}
+	span{
+		font-size: 1.6rem;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
