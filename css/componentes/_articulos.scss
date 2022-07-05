@@ -1,0 +1,26 @@
+@use"./globales"as *;
+.articulos{
+    padding: 60px;
+    width: 50%;
+    background-color: $color-primario;
+}
+.articulo{
+    margin: 30px auto;
+    &__categoria{
+        font-size: 1.8rem;
+        margin-top:20px;
+        @include text($font-titles);
+    }
+    &__titulo{
+        font-size: 2rem;
+        @include text($font-titles);
+        color: $color-claro
+    }
+    &__descripcion{
+        font-size: 1.6rem;
+        @include text($font-text);
+        color: $color-claro;
+
+    }
+ 
+}

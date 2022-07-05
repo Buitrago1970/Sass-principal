@@ -1,0 +1,53 @@
+@use"./globales"as *;
+
+.perfil{
+	width: 50%;
+	padding-top: 50px;
+	background-color: $background-color;
+	color: $color-claro;
+	&__avatar{
+		display: block;
+		margin: 0 auto;
+		border-radius: 30%;
+	}
+	&__nombre{
+		text-align: center;
+		@include text($font-titles);
+	}
+	&__titulo{
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: 700;
+		color: getOpacity($color-primario,0.5);
+		@include text($font-text)
+	}
+	&__boton{
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+		width: 100px;
+		height: 40px;
+		margin: 30px auto;
+		border-radius: 50px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1.8rem;
+		color: $color-claro;
+		border: getOpacity($color-primario,0.6);
+		background-color: getOpacity($color-primario,1);
+		&:hover {
+			background-color: $color-hover-btn;
+		}
+	}
+}
+
+.perfil__minibio{
+	margin: 25px auto;
+	h2{
+		@extend .perfil__nombre ;
+	}
+	h3{
+		@extend .perfil__titulo;
+	}
+}
